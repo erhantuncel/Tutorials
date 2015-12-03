@@ -27,5 +27,4 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	public void deleteEmployee(Employee employee) {
 		sessionFactory.getCurrentSession().delete(employee);
 	}
-
 }
