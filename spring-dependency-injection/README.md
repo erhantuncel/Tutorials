@@ -1,0 +1,1 @@
+Resource : http://www.journaldev.com/2410/spring-dependency-injection-example-with-annotations-and-xml-configuration
