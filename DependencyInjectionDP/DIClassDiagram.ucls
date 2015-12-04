@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" name="com.journaldev.java.dependencyinjection.consumer.Consumer" 
+    project="DependencyInjectionDP" 
+    file="/DependencyInjectionDP/src/com/journaldev/java/dependencyinjection/consumer/Consumer.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="83" width="249" x="1188" y="343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="2" language="java" name="com.journaldev.java.dependencyinjection.injector.MessageServiceInjector" 
+    project="DependencyInjectionDP" 
+    file="/DependencyInjectionDP/src/com/journaldev/java/dependencyinjection/injector/MessageServiceInjector.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="83" width="237" x="511" y="343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="3" language="java" name="com.journaldev.java.dependencyinjection.service.SMSServiceImpl" 
+    project="DependencyInjectionDP" 
+    file="/DependencyInjectionDP/src/com/journaldev/java/dependencyinjection/service/SMSServiceImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="101" width="236" x="1477" y="202"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.journaldev.java.dependencyinjection.injector.SMSServiceInjector" 
+    project="DependencyInjectionDP" 
+    file="/DependencyInjectionDP/src/com/journaldev/java/dependencyinjection/injector/SMSServiceInjector.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="237" x="373" y="202"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.journaldev.java.dependencyinjection.injector.EmailServiceInjector" 
+    project="DependencyInjectionDP" 
+    file="/DependencyInjectionDP/src/com/journaldev/java/dependencyinjection/injector/EmailServiceInjector.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="237" x="650" y="202"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="6" language="java" name="com.journaldev.java.dependencyinjection.service.MessageService" 
+    project="DependencyInjectionDP" 
+    file="/DependencyInjectionDP/src/com/journaldev/java/dependencyinjection/service/MessageService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="83" width="236" x="1477" y="343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="7" language="java" name="com.journaldev.java.dependencyinjection.consumer.MyDIApplication" 
+    project="DependencyInjectionDP" 
+    file="/DependencyInjectionDP/src/com/journaldev/java/dependencyinjection/consumer/MyDIApplication.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="249" x="1188" y="202"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.journaldev.java.dependencyinjection.service.EmailServiceImpl" 
+    project="DependencyInjectionDP" 
+    file="/DependencyInjectionDP/src/com/journaldev/java/dependencyinjection/service/EmailServiceImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="236" x="1753" y="202"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.journaldev.java.dependencyinjection.test.MyMessageDITest" 
+    project="DependencyInjectionDP" 
+    file="/DependencyInjectionDP/src/com/journaldev/java/dependencyinjection/test/MyMessageDITest.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="101" width="221" x="927" y="202"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="10">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="11">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="12" name="service"/>      
+      <multiplicity id="13" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="14">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <realization id="15">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="16">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <realization id="17">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
