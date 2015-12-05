@@ -1,0 +1,1 @@
+Resource : http://www.journaldev.com/2461/spring-ioc-container-and-spring-bean-example-tutorial
