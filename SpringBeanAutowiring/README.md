@@ -1,0 +1,1 @@
+Resource : http://www.journaldev.com/2623/spring-bean-autowire-by-name-type-constructor-autowired-and-qualifier-annotations-example
