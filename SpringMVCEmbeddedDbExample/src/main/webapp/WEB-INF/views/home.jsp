@@ -12,7 +12,7 @@
 	<tr>
 		<td colspan=5 align="right">
 			<form action="<c:url value="/searchByCountry"/>" method="POST">
-				Þehir : 
+				Ülke : 
 				<input type="text" name="country" />
 				<input type="submit" value="Ara" />
 			</form>
