@@ -16,7 +16,6 @@
 				<input type="text" name="country" />
 				<input type="submit" value="Ara" />
 			</form>
-		
 		</td>
 	</tr>
 	<tr>
