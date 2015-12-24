@@ -43,11 +43,11 @@ public class UserController {
 	@RequestMapping(value="/", method = RequestMethod.GET)
 	public String index(Model model) {
 		logger.debug("index()");
-		return "redirect:/users";
+		return "redirect:/user";
 	}
 	
 	// lista page
-	@RequestMapping(value="/users", method = RequestMethod.GET)
+	@RequestMapping(value="/user", method = RequestMethod.GET)
 	public String showAllUsers(Model model) {
 		logger.debug("showAllUsers()");
 		model.addAttribute("users", userService.findAll());
@@ -58,7 +58,7 @@ public class UserController {
 	// 1. @ModelAttribute bind form value
 	// 2. @Validated form validator
 	// 3. RedirectAttributes for flash value
-	@RequestMapping(value="/users", method = RequestMethod.POST)
+	@RequestMapping(value="/user", method = RequestMethod.POST)
 	public String saveOrUpdateUser(@ModelAttribute("userForm") @Validated User user, 
 						BindingResult result, 
 						Model model, 
@@ -68,7 +68,7 @@ public class UserController {
 		
 		if(result.hasErrors()) {
 			populateDefaultModel(model);
-			return "users/userform";
+			return "user/userform";
 		} else {
 			// Add messages to flash scope
 			redirectAttributes.addFlashAttribute("css", "success");
@@ -81,12 +81,12 @@ public class UserController {
 			userService.saveOrUpdate(user);
 			
 			// POST/REDIRECT/GET
-			return "redirect:/users/" + user.getId();
+			return "redirect:/user/" + user.getId();
 		}
 	}
 	
 	// show add user form
-	@RequestMapping(value="/users/add", method = RequestMethod.GET)
+	@RequestMapping(value="/user/add", method = RequestMethod.GET)
 	public String showAddUserForm(Model model) {
 		logger.debug("showAddUserForm()");
 		
@@ -106,11 +106,11 @@ public class UserController {
 		
 		populateDefaultModel(model);
 		
-		return "/users/userform";
+		return "/user/userform";
 	}
 	
 	// show update form
-	@RequestMapping(value="/users/{id}/update", method = RequestMethod.GET)
+	@RequestMapping(value="/user/{id}/update", method = RequestMethod.GET)
 	public String showUpdateUserForm(@PathVariable("id") int id, Model model) {
 		logger.debug("showUpdateUserForm() : {}", id);
 		
@@ -119,11 +119,11 @@ public class UserController {
 		
 		populateDefaultModel(model);
 		
-		return "users/userform";
+		return "user/userform";
 	}
 
 	// delete user
-	@RequestMapping(value="/users/{id}/delete", method = RequestMethod.GET)
+	@RequestMapping(value="/user/{id}/delete", method = RequestMethod.GET)
 	public String deleteUser(@PathVariable("id") int id, 
 				final RedirectAttributes redirectAttributes) {
 		logger.debug("deleteUser()");
@@ -133,11 +133,11 @@ public class UserController {
 		redirectAttributes.addFlashAttribute("css", "success");
 		redirectAttributes.addFlashAttribute("msg", "User is deleted!"); 
 		
-		return "redirect:/users";
+		return "redirect:/user";
 	}
 	
 	// show user
-	@RequestMapping(value="/users/{id}", method=RequestMethod.GET)
+	@RequestMapping(value="/user/{id}", method=RequestMethod.GET)
 	public String showUser(@PathVariable("id") int id, Model model) {
 		logger.debug("showUser(");
 		
@@ -148,7 +148,7 @@ public class UserController {
 		}
 		model.addAttribute("user", user);
 		
-		return "/users/show";
+		return "user/show";
 	}
 	
 	

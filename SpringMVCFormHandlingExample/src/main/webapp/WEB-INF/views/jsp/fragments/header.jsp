@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,20 +11,19 @@
 <title>Spring MVC Form Handling</title>
 
 <!-- Bootstrap core CSS -->
-<link href="resources/core/css/bootstrap.min.css" rel="stylesheet">
+<link href="<c:url value="/resources/core/css/bootstrap.min.css"/>" rel="stylesheet">
 <!-- Bootstrap theme -->
-<link href="resources/core/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="<c:url value="/resources/core/css/bootstrap-theme.min.css"/>" rel="stylesheet">
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
-<link href="resources/core/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
+<link href="<c:url value="/resources/core/assets/css/ie10-viewport-bug-workaround.css"/>" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="resources/core/css/theme.css" rel="stylesheet">
+<link href="<c:url value="/resources/core/css/theme.css"/>" rel="stylesheet">
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-<script src="resources/core/assets/js/ie-emulation-modes-warning.js"></script>
+<script src="<c:url value="/resources/core/assets/js/ie-emulation-modes-warning.js"/>"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>

@@ -42,9 +42,9 @@
 						</c:forEach>
 					</td>
 					<td>
-						<spring:url value="/users/${user.id}" var="userUrl" />
-						<spring:url value="/users/${user.id}/delete" var="deleteUrl" />
-						<spring:url value="/users/${user.id}/update" var="updateUrl" />
+						<spring:url value="/user/${user.id}" var="userUrl" />
+						<spring:url value="/user/${user.id}/delete" var="deleteUrl" />
+						<spring:url value="/user/${user.id}/update" var="updateUrl" />
 						<button type="button" class="btn btn-info" onclick="location.href='${userUrl}'">Query</button>
 						<button type="button" class="btn btn-primary" onclick="location.href='${updateUrl}'">Update</button>
 						<button type="button" class="btn btn-danger" onclick="location.href='${deleteUrl}'">Delete</button>
