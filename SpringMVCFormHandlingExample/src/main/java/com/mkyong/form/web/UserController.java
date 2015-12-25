@@ -46,7 +46,7 @@ public class UserController {
 		return "redirect:/user";
 	}
 	
-	// lista page
+	// list a page
 	@RequestMapping(value="/user", method = RequestMethod.GET)
 	public String showAllUsers(Model model) {
 		logger.debug("showAllUsers()");
