@@ -24,7 +24,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<jdbc:embedded-database id="dataSource">
+	<jdbc:embedded-database id="dataSource" type="HSQL">
 		<jdbc:script location="classpath:db/sql/create-db.sql"/>
 		<jdbc:script location="classpath:db/sql/insert-data.sql"/>
 	</jdbc:embedded-database>	
@@ -32,11 +32,11 @@
 	<context:component-scan base-package="com.mkyong.form" />
 	
 	<beans:bean id="messageSource" 
-		class="org.springframework.context.support.ResourceBundleMessageSource">
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
 		<beans:property name="basenames">
 			<beans:list>
-				<beans:value>classpath:messages/messages</beans:value>
-				<beans:value>classpath:messages/validation</beans:value>			
+				<beans:value>classpath:/messages/messages</beans:value>
+				<beans:value>classpath:/messages/validation/validation</beans:value>			
 			</beans:list>
 		</beans:property>
 	</beans:bean>

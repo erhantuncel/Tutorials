@@ -72,13 +72,11 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	public void update(User user) {
-		KeyHolder keyHolder = new GeneratedKeyHolder();
 		
-		String sql = "UPDATE users SET NAME=:name, EMAIL=:email, ADDRESS=:address, PASSWORD=:password, NEWSLETTER=:newsletter,"
-				+ " FRAMEWORK=:framework, SEX=:sex, NUMBER=:number, COUNTRY=:country, SKILL=:skill WHERE id=:id";
+		String sql = "UPDATE users SET name=:name, email=:email, address=:address, password=:password, newsletter=:newsletter,"
+				+ " framework=:framework, sex=:sex, number=:number, country=:country, skill=:skill WHERE id=:id";
 		
-		namedParamaterJdbcTemplate.update(sql, getSqlParameterByModel(user), keyHolder);
-		user.setId(keyHolder.getKey().intValue());
+		namedParamaterJdbcTemplate.update(sql, getSqlParameterByModel(user));
 	}
 
 	@Override
@@ -97,7 +95,7 @@ public class UserDaoImpl implements UserDao {
 		paramSource.addValue("newsletter", user.isNewsletter());
 		
 		// join String
-		paramSource.addValue("framework", user.getFramework());
+		paramSource.addValue("framework", convertListToDelimitedString(user.getFramework()));
 		paramSource.addValue("sex", user.getSex());
 		paramSource.addValue("number", user.getNumber());
 		paramSource.addValue("country", user.getCountry());

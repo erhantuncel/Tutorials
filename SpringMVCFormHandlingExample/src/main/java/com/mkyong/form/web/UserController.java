@@ -139,7 +139,7 @@ public class UserController {
 	// show user
 	@RequestMapping(value="/user/{id}", method=RequestMethod.GET)
 	public String showUser(@PathVariable("id") int id, Model model) {
-		logger.debug("showUser(");
+		logger.debug("showUser()");
 		
 		User user = userService.findById(id);
 		if(user == null) {

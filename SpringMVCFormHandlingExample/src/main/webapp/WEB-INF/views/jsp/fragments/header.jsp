@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,11 +44,13 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Spring MVC Form</a>
+			<spring:url value="/user" var="userListUrl"/>
+			<a class="navbar-brand" href="${userListUrl}">Spring MVC Form</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul	class="nav navbar-nav navbar-right">
-				<li class="active"><a href="#">Add User</a></li>
+				<spring:url value="/user/add" var="userAddUrl" />
+				<li class="active"><a href="${userAddUrl}">Add User</a></li>
 			</ul>
 		</div>
 	</div>
